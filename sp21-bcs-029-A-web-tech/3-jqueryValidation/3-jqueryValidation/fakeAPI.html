@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="api.js"></script> <!-- Include the separate script file -->
+</head>
+
+<body class="items-center justify-center mx-auto">
+    <h1>Ecommerce API</h1>
+    <button id="toggleModalBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Add New Product
+    </button>
+
+    <div id="allProducts">
+        
+    </div>
+
+    <div id="modal" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+            <!-- Add Product Modal Content -->
+            <div class="modal-content py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold">Add New Product</p>
+                    <div class="modal-close cursor-pointer z-50" id="modalCloseBtn">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path
+                                d="M1 1l16 16m0-16L1 17"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Form to Add a New Product -->
+                <input type="text" placeholder="Product Name" class="border rounded w-full py-2 px-3 mb-3" id="productName">
+                <input type="number" placeholder="Price" class="border rounded w-full py-2 px-3 mb-3" id="productPrice">
+                <input type="text" placeholder="Color" class="border rounded w-full py-2 px-3 mb-3" id="productColor">
+                <input type="text" placeholder="Department" class="border rounded w-full py-2 px-3 mb-3" id="productDepartment">
+                <textarea placeholder="Description" class="border rounded w-full py-2 px-3 mb-3" id="productDescription"></textarea>
+                <button id="addProductBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Product</button>
+                <button id="updateSave" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Product</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
