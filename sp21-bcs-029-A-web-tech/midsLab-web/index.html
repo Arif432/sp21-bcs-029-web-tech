@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <!-- Bootstrap 5.0.2 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 100px;
+    background-color: blue;
+  }
+  </style>
+  
+  <body style="padding: 30px;padding-top: 0;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="flex: 1;">
+        <div style="display: flex;flex-direction: column;">
+          <p>text 1</p>
+          <div style="display: flex; justify-content:flex-start;">
+            <p style="background-color: black;color: white;">text 2</p>
+          </div>
+        </div>
+      </div>
+      <img width="200" height="200" id="logo" src="https://www.thenews.com.pk/assets/front/images/Thenews-logo.svg"/>
+      <div style="flex: 1; text-align: right;">
+        
+        <div>
+          <p>text 3</p>
+        <div style="display: flex; justify-content:flex-end;">
+          <p style="background-color: black;color: white;">text 2</p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    
+
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Home</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Latest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">National</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">bussiness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">entertainment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">health</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Oped
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mid-img" style="width: 300px; margin: 0 auto;">
+      <img width="300" height="200" src="https://www.thenews.com.pk/assets/front/images/Thenews-logo.svg" />
+    </div>
+    
+    change it so that card should be in same row as of 4 images div
+    
+    <div id="politics" style="padding: 20;flex-direction: column;">
+      <div style="display: flex;flex-direction: row;">
+        
+        <div style="display: flex;flex-direction: column;padding: 20px;">
+          <div>
+            <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" data-src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class=" lazyloaded" width="200" height="120">
+            <p style="font-weight: bold;font-size: larger;">sasadsadsalh</p>
+          </div>
+          <div>
+            <img alt="FIA told to bring Zulfi back through Interpol" title="FIA told to bring Zulfi back through Interpol" src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" data-src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class=" lazyloaded" width="200" height="120">
+            <p style="font-weight: bold;font-size: larger;">sasadsadsalh</p>
+          </div><div>
+            <img alt="FIA told to bring Zulfi back through Interpol" title="FIA told to bring Zulfi back through Interpol" src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" data-src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class=" lazyloaded" width="200" height="120">
+            <p style="font-weight: bold;font-size: larger;">sasadsadsalh</p>
+          </div>
+          <div>
+            <img alt="FIA told to bring Zulfi back through Interpol" title="FIA told to bring Zulfi back through Interpol" src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" data-src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class=" lazyloaded" width="200" height="120">
+            <p style="font-weight: bold;font-size: larger;">sasadsadsalh</p>
+          </div><div>
+            <img alt="FIA told to bring Zulfi back through Interpol" title="FIA told to bring Zulfi back through Interpol" src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" data-src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class=" lazyloaded" width="200" height="120">
+            <p style="font-weight: bold;font-size: larger;">sasadsadsalh</p>
+          </div>
+      </div>
+
+      <div style="width: 80%; padding: 20px;">
+        <div style="display: flex; flex-direction: row;">
+        <div class="card" style="width: 25rem;">
+          <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        
+        <div class="card" style="width: 25rem;margin-left: 120px;">
+          <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>     
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="politics" style="display: flex; flex-wrap: wrap; padding: 20px;">
+          <div style="width: 28%;">
+            <div class="card" style="width:10rem;">
+              <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 28%;">
+            <div class="card" style="width: 10rem;">
+              <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 28%;">
+            <div class="card" style="width: 10rem;">
+              <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2023-10-26/s_1122902_053738_updates.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+      
+      </div>
+
+
+      <div class="parent">
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+        <div class="child" style="color: white;padding: 8px;">dsasadsadsadasdssa</div>
+      </div>
+      
+    </div>
+
+
+     
+
+   
+    <script>
+      $(document).ready(function () {
+        // Handle the click event on the logo image
+        $('#logo').click(function () {
+          // Trigger the collapse button's click event
+          $('.navbar').hide();
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>
