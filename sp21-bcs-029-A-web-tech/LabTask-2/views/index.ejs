@@ -1,0 +1,34 @@
+<%- include ('layouts/header') %>
+
+<div class="p-4">
+    <h1 class="text-3xl font-bold mb-4">Index</h1>
+
+    <table id="/users/get" class="min-w-full bg-white border border-gray-300">
+        <thead>
+            <tr>
+                <th class="py-2 border-b">Id</th>
+                <th class="py-2 border-b">Name</th>
+                <th class="py-2 border-b">Email</th>
+                <th class="py-2 border-b">role</th>
+                <th class="py-2 border-b">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% users.forEach(user => { %>
+                <tr>
+                    <td class="py-2 border-b"><%= user.id %></td>
+                    <td class="py-2 border-b"><%= user.name %></td>
+                    <td class="py-2 border-b"><%= user.email %></td>
+                    <td class="py-2 border-b"><%= user.role %></td>
+                    <td class="py-2 border-b">
+                        <a href="/edit/<%= user.id %>" class="text-blue-500 hover:text-blue-700">Edit</a>
+                        <a href="/delete/<%= user.id %>" class="text-red-500 hover:text-red-700">Delete</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+
+<%- include ('layouts/footer') %>
